@@ -58,6 +58,13 @@ html {
 	display: block;
 }
 
+.link--archive {
+	padding: 10px 30px 10px 30px;
+	margin: 20px;
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+}
 
 /* --- NAV --- */
 
@@ -114,7 +121,6 @@ html {
 /* --- WRAPPER --- */
 
 .wrapper {
-	padding: 20px 0px 20px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -224,4 +230,15 @@ html {
 .fotorama__caption {
 	position: absolute;
 	text-align: center;
+}
+
+/* --- NEWSPAPER-ARCHIVE --- */
+
+.newspaper-archive {
+	border: 5px solid grey;
+}
+
+.newspaper-archive__img {
+	width: 100%;
+	border-top: 5px solid grey;
 }
