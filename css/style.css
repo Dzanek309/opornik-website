@@ -20,43 +20,62 @@ html {
 	font-family: system-ui;
 }
 
-.header__video {
+/* --- VIDEO --- */
+
+.video {
+	border: 5px solid lightskyblue;
+}
+
+.video--header {
 	position: fixed;
 	left: 0;
 	top: 0;
 	min-width: 102%;
 	z-index: -100;
+	border: none;
+}
+
+
+.video--opornik-description {
+	width: 80%;
 }
 
 /* --- LINK --- */
 
 .link {
-	color: white;
-	text-shadow: 2px 2px 18px black;
 	text-decoration: none;
 }
 
+.link-header {
+	color: white;
+	text-shadow: 2px 2px 18px black;
+}
 
-/* Nawigacja */
+.link--nav {
+	text-decoration: none;
+	color: #999999;
+	height: 100%;
+	display: block;
+}
 
 
-#nav {
+/* --- NAV --- */
+
+
+.nav {
 	background-color: #e6e6e6;
-	/* 90% */
 	margin: 0px;
 	padding: 0px;
 	position: sticky;
 	top: 0;
 	text-align: center;
 	border-top: 2px solid #d9d9d9;
-	/* 85% */
 	border-bottom: 2px solid #d9d9d9;
-	/* 85% */
 	z-index: 100;
 	box-shadow: 0px 9px 16px rgb(163, 177, 198, 0.6);
 }
 
-.nav {
+.nav__ol {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -69,7 +88,7 @@ html {
 	flex-direction: row;
 }
 
-.nav>li {
+.nav__ol>li {
 	text-align: center;
 	float: left;
 	width: 150px;
@@ -77,62 +96,56 @@ html {
 	transition: box-shadow .12s ease-in-out;
 }
 
-.nav>li:hover {
+.nav__ol>li:hover {
 	box-shadow:
 		inset 0 0px 16px rgba(0, 0, 0, 0.15);
 }
 
-.nav>li>a {
-	text-decoration: none;
-	color: #999999;
-	/* 60% */
-	height: 100%;
-	display: block;
-}
 
+/* --- SECTION --- */
 
-/* Zawartość */
-
-article {
-	text-align: center;
-	margin: 0px;
-	padding: 30px 0px 30px 0px;
+.section {
 	background-color: white;
 	height: auto;
-	min-height: 56.4vh;
-}
-
-section {
-	width: 70%;
-	padding: 0px;
+	padding: 20px 10% 20px 10%;
 	margin: 0px;
-	display: inline-block;
-	vertical-align: top;
 }
 
-#zawartosc {
-	text-align: justify;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	font-size: 24px;
-}
+/* --- WRAPPER --- */
 
-#zawartosc-flex {
-	text-align: justify;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	font-size: 24px;
+.wrapper {
+	padding: 20px 0px 20px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.wrapper--row {
 	flex-direction: row;
 }
 
-/*Główna*/
+.wrapper--column {
+	flex-direction: column;
+}
+
+.wrapper-break {
+	flex-basis: 100%;
+}
+
+/* --- GRID ---*/
+.grid {
+	display: grid;
+	height: auto;
+	grid-gap: 20px;
+	padding: 20px;
+	flex: 1;
+}
+
+.grid--3-1fr {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* --- CARD -- */
 .card {
 	font-family: 'Lato', Arial, sans-serif;
 	position: relative;
@@ -141,37 +154,50 @@ section {
 	margin: 10px;
 	min-width: 250px;
 	max-width: 310px;
-	width: 100%;
 	font-size: 16px;
 	background-color: #ffffff;
 	color: #2B2B2B;
 	text-align: center;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+	padding: 20px;
 }
 
-.card h3 {
+.card__img {
+	width: 100px;
+	margin: 20px 0px 0px 0px;
+}
+
+.card__title {
 	padding: 10px 20px 10px 20px;
 	border: 5px solid lightskyblue;
+	margin: 20px;
 }
 
-.card .logo-image {
-	padding: 15% 10% 0;
+/* .card__title--big {} */
+
+.card__title--small {
+	font-size: 25px;
+	font-weight: bold;
 }
 
-.card .logo-image img {
-	max-width: 100%;
-	vertical-align: top;
-	position: relative;
-	max-width: 40%;
+.card__desc {
+	text-align: left;
+	font-size: 20px;
 }
 
-.card figcaption {
-	padding: 5% 10% 15%;
+/* --- FOOTER --- */
+.footer {
+	width: 100%;
+	background-color: #e6e6e6;
+	line-height: 200%;
+	color: #4d4d4d;
+	text-align: center;
+	font-size: 20px;
 }
 
 /* Osiągnięcia i historia */
 
-#lata {
+.timeline {
 	font-size: 40px;
 	letter-spacing: 4px;
 	color: darkturquoise;
@@ -180,26 +206,22 @@ section {
 	border-bottom: 5px solid lightgray;
 }
 
-#lata span {
+.timeline__year {
 	background-color: white;
 }
 
-/* Archiwum */
+.timeline-paragraph {
+	font-size: 25px;
+	font-weight: 500;
+	display: list-item;
+	list-style-type: disc;
+	margin-left: 125px;
+}
 
-/* Redakcja */
-/* Fotorama */
+/* --- FOTORAMA --*/
+
 
 .fotorama__caption {
 	position: absolute;
 	text-align: center;
-}
-
-/* Stopka */
-footer {
-	width: 100%;
-	background-color: #e6e6e6;
-	line-height: 200%;
-	color: #4d4d4d;
-	text-align: center;
-	font-size: 20px;
 }

@@ -2,103 +2,72 @@
 <html lang="pl">
 
 <head>
-
 	<meta charset="utf-8" />
-
 	<title>Opornik</title>
-
 	<link rel="icon" href="images/icon.png">
-
 	<link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
 	<link href="css/fotorama.css?v=3" rel="stylesheet" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/fotorama.js"></script>
 	<script src="js/script.js"></script>
 	<meta name="author" content="Jan Bil">
-
 </head>
 
 <body>
-	<video autoplay muted loop id="menuVideo">
-		<source src="video/chmury.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	</video>
-	<header id="header"><a href="index.html">OPORNIK</a></header>
-	<nav id="nav">
-
-		<ol class="nav">
-			<li><a href="index.html">Główna</a></li>
-
-			<li><a href="osiagniecia.html">Osiągnięcia</a></li>
-
-			<li><a href="historia.html">Historia</a></li>
-
-			<li><a href="redakcja.html">Redakcja</a></li>
-
-			<li><a href="goscie.html">Goście</a></li>
-
-			<li><a href="galeria.html">Galeria zdjęć</a></li>
-
-			<li><a href="archiwum.html">Archiwum</a></li>
-
-			<li><a href="spotkania.html">Spotkania</a></li>
-
+	<header class="header">
+		<video autoplay muted loop class="video video--header">
+			<source src="video/chmury.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<a class="link link-header" href="index.html">OPORNIK</a>
+	</header>
+	<nav class="nav">
+		<ol class="nav__ol">
+			<li><a class="link link--nav" href="index.html">Główna</a></li>
+			<li><a class="link link--nav" href="osiagniecia.html">Osiągnięcia</a></li>
+			<li><a class="link link--nav" href="historia.html">Historia</a></li>
+			<li><a class="link link--nav" href="redakcja.html">Redakcja</a></li>
+			<li><a class="link link--nav" href="goscie.html">Goście</a></li>
+			<li><a class="link link--nav" href="galeria.html">Galeria zdjęć</a></li>
+			<li><a class="link link--nav" href="archiwum.html">Archiwum</a></li>
+			<li><a class="link link--nav" href="spotkania.html">Spotkania Online</a></li>
 		</ol>
-
 	</nav>
-
 	<main>
-
-		<article>
-
-			<section>
-
-				<div id="zawartosc">
-
-					<div class="fotorama" data-loop="true" data-transition="slide" data-allowfullscreen="native"
-						data-nav="thumbs" data-arrows="false" data-fit="cover" data-navposition="bottom"
-						data-maxheight="100%" data-swipe="true">
-
-						<img src="galeria/1.jpg">
-						<img src="galeria/2.jpg">
-						<img src="galeria/3.jpg">
-						<img src="galeria/4.jpg">
-						<img src="galeria/5.jpg">
-						<img src="galeria/6.jpg">
-						<img src="galeria/7.jpg">
-						<img src="galeria/8.jpg">
-						<img src="galeria/9.jpg">
-						<img src="galeria/10.jpg">
-						<img src="galeria/11.jpg">
-						<img src="galeria/12.jpg">
-						<img src="galeria/13.jpg">
-						<img src="galeria/14.jpg">
-						<img src="galeria/15.jpg">
-						<img src="galeria/16.jpg">
-						<img src="galeria/17.jpg">
-						<img src="galeria/18.jpg">
-						<img src="galeria/19.jpg">
-						<img src="galeria/20.jpg">
-						<img src="galeria/21.jpg">
-
-					</div>
-
-				</div>
-
-			</section>
-
-		</article>
-
+		<section class="section">
+			<div class="fotorama" data-loop="true" data-transition="slide" data-allowfullscreen="native"
+				data-nav="thumbs" data-arrows="false" data-fit="cover" data-navposition="bottom" data-maxheight="100%"
+				data-swipe="true">
+				<img src="galeria/1.jpg">
+				<img src="galeria/2.jpg">
+				<img src="galeria/3.jpg">
+				<img src="galeria/4.jpg">
+				<img src="galeria/5.jpg">
+				<img src="galeria/6.jpg">
+				<img src="galeria/7.jpg">
+				<img src="galeria/8.jpg">
+				<img src="galeria/9.jpg">
+				<img src="galeria/10.jpg">
+				<img src="galeria/11.jpg">
+				<img src="galeria/12.jpg">
+				<img src="galeria/13.jpg">
+				<img src="galeria/14.jpg">
+				<img src="galeria/15.jpg">
+				<img src="galeria/16.jpg">
+				<img src="galeria/17.jpg">
+				<img src="galeria/18.jpg">
+				<img src="galeria/19.jpg">
+				<img src="galeria/20.jpg">
+				<img src="galeria/21.jpg">
+			</div>
+		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		© 2021 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie
 	</footer>
-
 </body>
 
 </html>

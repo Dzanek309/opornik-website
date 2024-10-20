@@ -2,127 +2,88 @@
 <html lang="pl">
 
 <head>
-
 	<meta charset="utf-8" />
-
 	<title>Opornik</title>
-
 	<link rel="icon" href="images/icon.png">
-
 	<link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
 	<link href="css/fotorama.css?v=3" rel="stylesheet" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/fotorama.js"></script>
 	<script src="js/script.js"></script>
 	<meta name="author" content="Jan Bil">
-
 </head>
 
 <body>
-	<div id="top">
-		<video autoplay muted loop id="menuVideo">
+	<header class="header">
+		<video autoplay muted loop class="video video--header">
 			<source src="video/chmury.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		</video>
-		<header id="header"><a href="index.html">OPORNIK</a></header>
-
-	</div>
-
-	<nav id="nav">
-
-		<ol class="nav">
-			<li><a href="index.html">Główna</a></li>
-
-			<li><a href="osiagniecia.html">Osiągnięcia</a></li>
-
-			<li><a href="historia.html">Historia</a></li>
-
-			<li><a href="redakcja.html">Redakcja</a></li>
-
-			<li><a href="goscie.html">Goście</a></li>
-
-			<li><a href="galeria.html">Galeria zdjęć</a></li>
-
-			<li><a href="archiwum.html">Archiwum</a></li>
-
-			<li><a href="spotkania.html">Spotkania</a></li>
-
-
+		<a class="link link-header" href="index.html">OPORNIK</a>
+	</header>
+	<nav class="nav">
+		<ol class="nav__ol">
+			<li><a class="link link--nav" href="index.html">Główna</a></li>
+			<li><a class="link link--nav" href="osiagniecia.html">Osiągnięcia</a></li>
+			<li><a class="link link--nav" href="historia.html">Historia</a></li>
+			<li><a class="link link--nav" href="redakcja.html">Redakcja</a></li>
+			<li><a class="link link--nav" href="goscie.html">Goście</a></li>
+			<li><a class="link link--nav" href="galeria.html">Galeria zdjęć</a></li>
+			<li><a class="link link--nav" href="archiwum.html">Archiwum</a></li>
+			<li><a class="link link--nav" href="spotkania.html">Spotkania Online</a></li>
 		</ol>
-
 	</nav>
-
 	<main>
-
-		<article>
-
-			<section>
-
-				<div id="zawartosc">
-
-					<p>W gazetce szkolnej "Opornik" mieliśmy okazję zaprosić:
-
-					<div id="redakcja">
-
-						<ul>
-							<li>Artura Łabudzkiego </li>
-							<li>Adama Czarnego</li>
-							<li>Dominika Nowaka</li>
-							<li>Elżbietę Zabrzeńską</li>
-							<li>Elżbietę Przybyłą-Krzywonos</li>
-							<li>Feliksa Maaka</li>
-							<li>Iwonę Choncia</li>
-							<li>Jerzego Jaskanieca</li>
-							<li>Krzysztofa Dulińskiego</li>
-							<li>Kacpra Sewiło</li>
-							<li>Krzysztofa Kordzi</li>
-							<li>Ks. Tomasza Koperka</li>
-							<li>Ks. Daniela Hinca</li>
-							<li>Piotra Kędzierskiego</li>
-							<li>Tomasza Talaczyńskiego</li>
-							<li>Tomasza Zająca</li>
-							<li>Wiesława Szulca</li>
-							<li>Lucynę Bełtowską</li>
-						</ul>
-
-					</div>
-
-					<br>
-
-					<div class="fotorama" data-loop="true" data-transition="slide" data-allowfullscreen="allow"
-						data-nav="thumbs" data-arrows="false" data-fit="contain" data-navposition="bottom"
-						data-maxheight="80%" data-swipe="true">
-
-						<img src="galeria_goscie/arturLabudzki.jpg" data-caption="Artur Łabudzki">
-						<img src="galeria_goscie/dominikNowak.jpg" data-caption="Dominik Nowak">
-						<img src="galeria_goscie/elzbietaZabrzenska.jpg" data-caption="Elżbieta Zabrzeńska">
-						<img src="galeria_goscie/elzbietaPrzybyla.jpg" data-caption="Elżbieta Przybyła-Krzywonos">
-						<img src="galeria_goscie/iwonaChoncia.jpg" data-caption="Iwona Choncia">
-						<img src="galeria_goscie/jerzyJaskaniec.jpg" data-caption="Jerzy Jaskaniec">
-						<img src="galeria_goscie/krzysztofDulinski.jpg" data-caption="Krzysztof Duliński">
-						<img src="galeria_goscie/tomaszKoperek.jpg" data-caption="Ks. Tomasz Koperek">
-						<img src="galeria_goscie/danielHinc.jpg" data-caption="Ks. Daniel Hinc">
-						<img src="galeria_goscie/tomaszTalaczynski.jpg" data-caption="Tomasz Talaczyński">
-						<img src="galeria_goscie/wieslawSzulc.jpg" data-caption="Wiesław Szulc">
-						<img src="galeria_goscie/kacperSewilo.jpg" data-caption="Kacper Sewiło">
-						<img src="galeria_goscie/feliksMaak.jpg" data-caption="Feliks Maak">
-						<img src="galeria_goscie/piotrKedzierski.jpg" data-caption="Piotr Kędzierski">
-						<img src="galeria_goscie/tomaszZajac.jpg" data-caption="Tomasz Zając">
-						<img src="galeria_goscie/lucynaBeltowska.jpg" data-caption="Lucyna Bełtowska">
-					</div>
-
-				</div>
-
-			</section>
-
-		</article>
+		<section class="section">
+			<p>W gazetce szkolnej "Opornik" mieliśmy okazję zaprosić:
+			<div class="wrapper wrapper--column">
+				<li>Artura Łabudzkiego </li>
+				<li>Adama Czarnego</li>
+				<li>Dominika Nowaka</li>
+				<li>Elżbietę Zabrzeńską</li>
+				<li>Elżbietę Przybyłą-Krzywonos</li>
+				<li>Feliksa Maaka</li>
+				<li>Iwonę Choncia</li>
+				<li>Jerzego Jaskanieca</li>
+				<li>Krzysztofa Dulińskiego</li>
+				<li>Kacpra Sewiło</li>
+				<li>Krzysztofa Kordzi</li>
+				<li>Ks. Tomasza Koperka</li>
+				<li>Ks. Daniela Hinca</li>
+				<li>Piotra Kędzierskiego</li>
+				<li>Tomasza Talaczyńskiego</li>
+				<li>Tomasza Zająca</li>
+				<li>Wiesława Szulca</li>
+				<li>Lucynę Bełtowską</li>
+				</ul>
+			</div>
+			<br>
+			<div class="fotorama" data-loop="true" data-transition="slide" data-allowfullscreen="allow"
+				data-nav="thumbs" data-arrows="false" data-fit="contain" data-navposition="bottom" data-maxheight="80%"
+				data-swipe="true">
+				<img src="galeria_goscie/arturLabudzki.jpg" data-caption="Artur Łabudzki">
+				<img src="galeria_goscie/dominikNowak.jpg" data-caption="Dominik Nowak">
+				<img src="galeria_goscie/elzbietaZabrzenska.jpg" data-caption="Elżbieta Zabrzeńska">
+				<img src="galeria_goscie/elzbietaPrzybyla.jpg" data-caption="Elżbieta Przybyła-Krzywonos">
+				<img src="galeria_goscie/iwonaChoncia.jpg" data-caption="Iwona Choncia">
+				<img src="galeria_goscie/jerzyJaskaniec.jpg" data-caption="Jerzy Jaskaniec">
+				<img src="galeria_goscie/krzysztofDulinski.jpg" data-caption="Krzysztof Duliński">
+				<img src="galeria_goscie/tomaszKoperek.jpg" data-caption="Ks. Tomasz Koperek">
+				<img src="galeria_goscie/danielHinc.jpg" data-caption="Ks. Daniel Hinc">
+				<img src="galeria_goscie/tomaszTalaczynski.jpg" data-caption="Tomasz Talaczyński">
+				<img src="galeria_goscie/wieslawSzulc.jpg" data-caption="Wiesław Szulc">
+				<img src="galeria_goscie/kacperSewilo.jpg" data-caption="Kacper Sewiło">
+				<img src="galeria_goscie/feliksMaak.jpg" data-caption="Feliks Maak">
+				<img src="galeria_goscie/piotrKedzierski.jpg" data-caption="Piotr Kędzierski">
+				<img src="galeria_goscie/tomaszZajac.jpg" data-caption="Tomasz Zając">
+				<img src="galeria_goscie/lucynaBeltowska.jpg" data-caption="Lucyna Bełtowska">
+			</div>
+		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		© 2021 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie
 	</footer>
 </body>

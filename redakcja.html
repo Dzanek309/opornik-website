@@ -2,472 +2,307 @@
 <html lang="pl">
 
 <head>
-
 	<meta charset="utf-8" />
-
 	<title>Opornik</title>
-
 	<link rel="icon" href="images/icon.png">
-
 	<link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
 	<link href="css/fotorama.css?v=3" rel="stylesheet" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/fotorama.js"></script>
 	<script src="js/script.js"></script>
 	<meta name="author" content="Jan Bil">
-
 </head>
 
 <body>
-	<video autoplay muted loop id="menuVideo">
-		<source src="video/chmury.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	</video>
-	<header id="header"><a href="index.html">OPORNIK</a></header>
-	<nav id="nav">
-
-		<ol class="nav">
-			<li><a href="index.html">Główna</a></li>
-
-			<li><a href="osiagniecia.html">Osiągnięcia</a></li>
-
-			<li><a href="historia.html">Historia</a></li>
-
-			<li><a href="redakcja.html">Redakcja</a></li>
-
-			<li><a href="goscie.html">Goście</a></li>
-
-			<li><a href="galeria.html">Galeria zdjęć</a></li>
-
-			<li><a href="archiwum.html">Archiwum</a></li>
-
-			<li><a href="spotkania.html">Spotkania</a></li>
-
+	<header class="header">
+		<video autoplay muted loop class="video video--header">
+			<source src="video/chmury.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<a class="link link-header" href="index.html">OPORNIK</a>
+	</header>
+	<nav class="nav">
+		<ol class="nav__ol">
+			<li><a class="link link--nav" href="index.html">Główna</a></li>
+			<li><a class="link link--nav" href="osiagniecia.html">Osiągnięcia</a></li>
+			<li><a class="link link--nav" href="historia.html">Historia</a></li>
+			<li><a class="link link--nav" href="redakcja.html">Redakcja</a></li>
+			<li><a class="link link--nav" href="goscie.html">Goście</a></li>
+			<li><a class="link link--nav" href="galeria.html">Galeria zdjęć</a></li>
+			<li><a class="link link--nav" href="archiwum.html">Archiwum</a></li>
+			<li><a class="link link--nav" href="spotkania.html">Spotkania Online</a></li>
 		</ol>
 	</nav>
-
 	<main>
-		<article>
-			<section>
-				<h2>Redakcja 2023/2024</h2>
-				<div id="zawartosc-flex">
-					<div class="card">
-						<div class="container">
-							<h4><b>Aleksandra Dubiel</b></h4>
-							<p>Opiekun gazetki</p>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Piotr Dudek</b></h4>
-							<p>Redaktor naczelny</p>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Mikołaj Dzioba</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Filip Kisiel</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Maks Banaś</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Casper Matyaszek</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Alek Będlin</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Daniel Ziemianin</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Szymon Śledziowski</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Weronika Sitek</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Karolina Kot</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Filip Bujakowski</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Wojtek Czachor</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Filip Gąstoł</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Marika Toch</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Oskar Pulchny</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Oskar Miś</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Emilia Kalita</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Dominik Mróz</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Karol Lerka</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Tadeusz Cudek</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Jędrzej Ostrożański</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Damian Mikstein</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Michał Sraga</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Tadeusz Francuz</b></h4>
-						</div>
-					</div>
+		<section class="section">
+			<h2 class="timeline"><span class="timeline__year">Redakcja 2023/2024</span></h2>
+			<div class="wrapper">
+				<div class="card">
+					<h4>Aleksandra Dubiel</h4>
+					<p>Opiekun gazetki</p>
 				</div>
-				<h2>Redakcja 2022/2023</h2>
-				<div id="zawartosc-flex">
-					<div class="card">
-						<div class="container">
-							<h4><b>Aleksandra Dubiel</b></h4>
-							<p>Opiekun gazetki</p>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Jasica Paweł</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Banaś Maksymilian</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Matyaszek Casper</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Francuz Tadeusz</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Mazgaj Jan</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Niedostatkiewicz Wojciech</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Śledziowski Szymon</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Ziemianin Daniel</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Będlin Aleksander</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Błoniarz Andrzej</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Dzioba Mikołaj</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Dawid Skawicki</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Kisiel Filip</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Klimak Kajetan</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Małysza Wiktor</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Strzelec Patryk</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Wieczorek Marek</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Zegarek Dawid</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Górak Kacper</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Walczyk Paweł</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Chalcarz Kacper</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Żółtowski Adrian</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Bil Jan</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Cygan Adam</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Dyło Piotr</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Godyń Zuzanna</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Klimas Kamil</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Korbus Szymon</b></h4>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Steczek Mateusz</b></h4>
-						</div>
-					</div>
+				<div class="card">
+					<h4>Piotr Dudek</h4>
+					<p>Redaktor naczelny</p>
 				</div>
-				<h2>Redakcja 2021/2022</h2>
-				<div id="zawartosc-flex">
-					<div class="card">
-						<div class="container">
-							<h4><b>Aleksandra Dubiel</b></h4>
-							<p>Opiekun gazetki</p>
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Szymon Korbus</b></h4>
-							<!-- <p>Redaktor naczelny</p>
-							<p>Zarządca strony internetowej</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Zuzanna Godyń</b></h4>
-							<!-- <p>Zastępca redaktora naczelnego</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Mateusz Ziemianin</b></h4>
-							<!-- <p>Sekretarz gazetki</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Jan Bil</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-							<!-- <p>Zarządca strony internetowej</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Adam Cygan</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Piotr Dyło</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Sebastian Góral</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Kamil Klimas</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Mateusz Steczek</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Kacper Chalcarz</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Franciszek Myszka</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Dawid Skawicki</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Grzegorz Giermek</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Wiktor Małysza</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Marek Wieczorek</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Paweł Konieczka</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Jakub Jackowski</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<div class="card">
-						<div class="container">
-							<h4><b>Patryk Strzelec</b></h4>
-							<!-- <p>Opracowanie graficzne</p> -->
-						</div>
-					</div>
-					<!-- <div class="card">
-						<img src="images/placeholder.png" alt="Avatar" style="width:100%">
-						<div class="container">
-							<h4><b>Kamil Bartyzel</b></h4>
-							<p>Opracowanie graficzne</p>
+				<span class="wrapper-break"></span>
+				<div class="card">
+					<h4>Mikołaj Dzioba</h4>
 				</div>
+				<div class="card">
+					<h4>Filip Kisiel</h4>
+				</div>
+				<div class="card">
+					<h4>Maks Banaś</h4>
+				</div>
+				<div class="card">
+					<h4>Casper Matyaszek</h4>
+				</div>
+				<div class="card">
+					<h4>Alek Będlin</h4>
+				</div>
+				<div class="card">
+					<h4>Daniel Ziemianin</h4>
+				</div>
+				<div class="card">
+					<h4>Szymon Śledziowski</h4>
+				</div>
+				<div class="card">
+					<h4>Weronika Sitek</h4>
+				</div>
+				<div class="card">
+					<h4>Karolina Kot</h4>
+				</div>
+				<div class="card">
+					<h4>Filip Bujakowski</h4>
+				</div>
+				<div class="card">
+					<h4>Wojtek Czachor</h4>
+				</div>
+				<div class="card">
+					<h4>Filip Gąstoł</h4>
+				</div>
+				<div class="card">
+					<h4>Marika Toch</h4>
+				</div>
+				<div class="card">
+					<h4>Oskar Pulchny</h4>
+				</div>
+				<div class="card">
+					<h4>Oskar Miś</h4>
+				</div>
+				<div class="card">
+					<h4>Emilia Kalita</h4>
+				</div>
+				<div class="card">
+					<h4>Dominik Mróz</h4>
+				</div>
+				<div class="card">
+					<h4>Karol Lerka</h4>
+				</div>
+				<div class="card">
+					<h4>Tadeusz Cudek</h4>
+				</div>
+				<div class="card">
+					<h4>Jędrzej Ostrożański</h4>
+				</div>
+				<div class="card">
+					<h4>Damian Mikstein</h4>
+				</div>
+				<div class="card">
+					<h4>Michał Sraga</h4>
+				</div>
+				<div class="card">
+					<h4>Tadeusz Francuz</h4>
+				</div>
+			</div>
+			<h2 class="timeline"><span class="timeline__year">Redakcja 2022/2023</span></h2>
+			<div class="wrapper">
+				<div class="card">
+					<h4>Aleksandra Dubiel</h4>
+					<p>Opiekun gazetki</p>
+				</div>
+				<div class="card">
+					<h4>Steczek Mateusz</h4>
+					<p>Redaktor naczelny</p>
+				</div>
+				<span class="wrapper-break"></span>
+				<div class="card">
+					<h4>Jasica Paweł</h4>
+				</div>
+				<div class="card">
+					<h4>Banaś Maksymilian</h4>
+				</div>
+				<div class="card">
+					<h4>Matyaszek Casper</h4>
+				</div>
+				<div class="card">
+					<h4>Francuz Tadeusz</h4>
+				</div>
+				<div class="card">
+					<h4>Mazgaj Jan</h4>
+				</div>
+				<div class="card">
+					<h4>Niedostatkiewicz Wojciech</h4>
+				</div>
+				<div class="card">
+					<h4>Śledziowski Szymon</h4>
+				</div>
+				<div class="card">
+					<h4>Ziemianin Daniel</h4>
+				</div>
+				<div class="card">
+					<h4>Będlin Aleksander</h4>
+				</div>
+				<div class="card">
+					<h4>Błoniarz Andrzej</h4>
+				</div>
+				<div class="card">
+					<h4>Dzioba Mikołaj</h4>
+				</div>
+				<div class="card">
+					<h4>Dawid Skawicki</h4>
+				</div>
+				<div class="card">
+					<h4>Kisiel Filip</h4>
+				</div>
+				<div class="card">
+					<h4>Klimak Kajetan</h4>
+				</div>
+				<div class="card">
+					<h4>Małysza Wiktor</h4>
+				</div>
+				<div class="card">
+					<h4>Strzelec Patryk</h4>
+				</div>
+				<div class="card">
+					<h4>Wieczorek Marek</h4>
+				</div>
+				<div class="card">
+					<h4>Zegarek Dawid</h4>
+				</div>
+				<div class="card">
+					<h4>Górak Kacper</h4>
+				</div>
+				<div class="card">
+					<h4>Walczyk Paweł</h4>
+				</div>
+				<div class="card">
+					<h4>Chalcarz Kacper</h4>
+				</div>
+				<div class="card">
+					<h4>Żółtowski Adrian</h4>
+				</div>
+				<div class="card">
+					<h4>Jan Bil</h4>
+				</div>
+				<div class="card">
+					<h4>Cygan Adam</h4>
+				</div>
+				<div class="card">
+					<h4>Dyło Piotr</h4>
+				</div>
+				<div class="card">
+					<h4>Godyń Zuzanna</h4>
+				</div>
+				<div class="card">
+					<h4>Klimas Kamil</h4>
+				</div>
+				<div class="card">
+					<h4>Korbus Szymon</h4>
+				</div>
+			</div>
+			<h2 class="timeline"><span class="timeline__year">Redakcja 2021/2022</span></h2>
+			<div class="wrapper">
+				<div class="card">
+					<h4>Aleksandra Dubiel</h4>
+					<p>Opiekun gazetki</p>
+				</div>
+				<div class="card">
+					<h4>Szymon Korbus</h4>
+					<p>Redaktor naczelny</p>
+				</div>
+				<span class="wrapper-break"></span>
+				<div class="card">
+					<h4>Zuzanna Godyń</h4>
+					<!-- <p>Zastępca redaktora naczelnego</p> -->
+				</div>
+				<div class="card">
+					<h4>Mateusz Ziemianin</h4>
+					<!-- <p>Sekretarz gazetki</p> -->
+				</div>
+				<div class="card">
+					<h4>Jan Bil</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+					<!-- <p>Zarządca strony internetowej</p> -->
+				</div>
+				<div class="card">
+					<h4>Adam Cygan</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Piotr Dyło</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Sebastian Góral</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Kamil Klimas</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Mateusz Steczek</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Kacper Chalcarz</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Franciszek Myszka</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Dawid Skawicki</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Grzegorz Giermek</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Wiktor Małysza</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Marek Wieczorek</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Paweł Konieczka</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Jakub Jackowski</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<div class="card">
+					<h4>Patryk Strzelec</h4>
+					<!-- <p>Opracowanie graficzne</p> -->
+				</div>
+				<!-- <div class="card">
+					<h4>Kamil Bartyzel</h4>
+					<p>Opracowanie graficzne</p>
 				</div> -->
-				</div>
-			</section>
-		</article>
+			</div>
+		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		© 2021 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie
 	</footer>
 </body>

@@ -2,109 +2,92 @@
 <html lang="pl">
 
 <head>
-
 	<meta charset="utf-8" />
-
 	<title>Opornik</title>
-
 	<link rel="icon" href="images/icon.png">
-
 	<link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
 	<link href="css/fotorama.css?v=3" rel="stylesheet" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/fotorama.js"></script>
 	<script src="js/script.js"></script>
 	<meta name="author" content="Jan Bil">
-
 </head>
 
 <body>
-	<video autoplay muted loop id="menuVideo">
-		<source src="video/chmury.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	</video>
-	<header id="header"><a href="index.html">OPORNIK</a></header>
-	<nav id="nav">
-		<ol class="nav">
-			<li><a href="index.html">Główna</a></li>
-
-			<li><a href="osiagniecia.html">Osiągnięcia</a></li>
-
-			<li><a href="historia.html">Historia</a></li>
-
-			<li><a href="redakcja.html">Redakcja</a></li>
-
-			<li><a href="goscie.html">Goście</a></li>
-
-			<li><a href="galeria.html">Galeria zdjęć</a></li>
-
-			<li><a href="archiwum.html">Archiwum</a></li>
-
-			<li><a href="spotkania.html">Spotkania</a></li>
+	<header class="header">
+		<video autoplay muted loop class="video video--header">
+			<source src="video/chmury.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<a class="link link-header" href="index.html">OPORNIK</a>
+	</header>
+	<nav class="nav">
+		<ol class="nav__ol">
+			<li><a class="link link--nav" href="index.html">Główna</a></li>
+			<li><a class="link link--nav" href="osiagniecia.html">Osiągnięcia</a></li>
+			<li><a class="link link--nav" href="historia.html">Historia</a></li>
+			<li><a class="link link--nav" href="redakcja.html">Redakcja</a></li>
+			<li><a class="link link--nav" href="goscie.html">Goście</a></li>
+			<li><a class="link link--nav" href="galeria.html">Galeria zdjęć</a></li>
+			<li><a class="link link--nav" href="archiwum.html">Archiwum</a></li>
+			<li><a class="link link--nav" href="spotkania.html">Spotkania Online</a></li>
 		</ol>
 	</nav>
 	<main>
-		<article>
-			<section>
-				<div id="zawartosc">
-					<!-- <h1>WORK IN PROGRESS</h1> -->
-					<div style="display: flex;flex-wrap: wrap;justify-content: center;flex-direction: row;">
-						<div>
-							<a href="archiwum/opornik-2019-nr-92-2.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2019-nr-92-2.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-2020-nr-93.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2020-nr-93.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-2020-nr-95-1.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2020-nr-95-1.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-2020-nr-96.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2020-nr-96.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-2021-nr-97.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2021-nr-97.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-2021-nr-98-1.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-2021-nr-98-1.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-nr-100.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-nr-100.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-nr-101.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-nr-101.pdf" width="95%" height="500px"></iframe>
-						</div>
-						<div>
-							<a href="archiwum/opornik-nr-99-6.pdf" target="_blank">OTWÓRZ</a>
-							<br>
-							<iframe src="archiwum/opornik-nr-99-6.pdf" width="95%" height="500px"></iframe>
-						</div>
-					</div>
+		<section class="section">
+			<div class="wrapper grid grid--3-1fr">
+				<div>
+					<a class="link" href="archiwum/opornik-2019-nr-92-2.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2019-nr-92-2.pdf" width="95%" height="500px"></iframe>
 				</div>
-			</section>
-		</article>
+				<div>
+					<a class="link" href="archiwum/opornik-2020-nr-93.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2020-nr-93.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-2020-nr-95-1.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2020-nr-95-1.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-2020-nr-96.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2020-nr-96.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-2021-nr-97.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2021-nr-97.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-2021-nr-98-1.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-2021-nr-98-1.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-nr-100.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-nr-100.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-nr-101.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-nr-101.pdf" width="95%" height="500px"></iframe>
+				</div>
+				<div>
+					<a class="link" href="archiwum/opornik-nr-99-6.pdf" target="_blank">OTWÓRZ</a>
+					<br>
+					<iframe src="archiwum/opornik-nr-99-6.pdf" width="95%" height="500px"></iframe>
+				</div>
+			</div>
+		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		© 2021 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie
 	</footer>
 </body>
