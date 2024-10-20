@@ -7,17 +7,22 @@ html {
 	color: black;
 }
 
+/* --- ROOT --- */
+
+/* :root {
+	--primary-color: white;
+	--secondary-color: black;
+	--third-color: yellow;
+} */
+
 
 /* --- HEADER --- */
 
 .header {
 	text-align: center;
-	font-size: 105px;
-	padding-top: 50px;
-	padding-bottom: 100px;
+	padding: 50px 0px 0px 0px;
 	box-sizing: border-box;
 	height: 270px;
-	font-family: system-ui;
 }
 
 /* --- VIDEO --- */
@@ -29,7 +34,7 @@ html {
 .video--header {
 	position: fixed;
 	left: 0;
-	top: 0;
+	top: -1000px;
 	min-width: 102%;
 	z-index: -100;
 	border: none;
@@ -46,16 +51,32 @@ html {
 	text-decoration: none;
 }
 
-.link-header {
+.link--header {
 	color: white;
 	text-shadow: 2px 2px 18px black;
+	font-size: 125px;
+	letter-spacing: 15px;
+	font-family: monospace;
 }
 
 .link--nav {
 	text-decoration: none;
-	color: #999999;
-	height: 100%;
+	color: white;
+	font-family: monospace;
 	display: block;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px 25px 10px 25px;
+	margin: 5px 5px 5px 5px;
+	font-size: 20px;
+	font-weight: 900;
+	border-radius: 5%;
+	transition: 0.2s;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.link--nav:hover {
+	background-color: white;
+	color: black;
 }
 
 .link--archive {
@@ -70,14 +91,13 @@ html {
 
 
 .nav {
-	background-color: #e6e6e6;
+	/* background-color: rgb(4, 54, 54); */
+	background-color: rgb(8, 127, 204);
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 	position: sticky;
 	top: 0;
 	text-align: center;
-	border-top: 2px solid #d9d9d9;
-	border-bottom: 2px solid #d9d9d9;
 	z-index: 100;
 	box-shadow: 0px 9px 16px rgb(163, 177, 198, 0.6);
 }
@@ -86,28 +106,7 @@ html {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
-	font-size: 20px;
-	font-weight: 900;
-	line-height: 260%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction: row;
 }
-
-.nav__ol>li {
-	text-align: center;
-	float: left;
-	width: 150px;
-	height: 50px;
-	transition: box-shadow .12s ease-in-out;
-}
-
-.nav__ol>li:hover {
-	box-shadow:
-		inset 0 0px 16px rgba(0, 0, 0, 0.15);
-}
-
 
 /* --- SECTION --- */
 
