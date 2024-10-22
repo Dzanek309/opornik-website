@@ -5,14 +5,14 @@
 	<meta charset="utf-8" />
 	<title>Opornik</title>
 	<link rel="icon" href="images/icon.png">
-	<link href="css/style.css?v=3" rel="stylesheet" type="text/css" />
-	<link href="css/fotorama.css?v=3" rel="stylesheet" />
+	<link href="css/style.css?v=5" rel="stylesheet" type="text/css" />
+	<link href="css/fotorama.css?v=5" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/fotorama.js"></script>
-	<script src="js/script.js"></script>
+	<link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+	<script src="https://vjs.zencdn.net/8.16.1/video.min.js" defer></script>
+	<script src="js/script.js" defer></script>
 	<meta name="author" content="Jan Bil">
 </head>
 
@@ -85,15 +85,19 @@
 			</div>
 			<br>
 			<div class="wrapper">
-
-				<video class="video video--opornik-description" controls>
+				<video id="my-video" class="video-js video video--opornik-description" controls preload="auto"
+					width="640" height="653" poster="images/opornik-description-cover.png" data-setup="{}">
 					<source src="video/opornik-description.mp4" type="video/mp4">
-					Your browser does not support HTML5 video.
+					<p class="vjs-no-js">
+						To view this video please enable JavaScript, and consider upgrading to a
+						web browser that
+						<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+					</p>
 				</video>
 			</div>
 		</section>
 		<footer class="footer">
-			© 2024 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie
+			© 2024 Zespół Szkół Elektrycznych nr 1 im. Powstańców Śląskich w Krakowie | Author: Jan Bil
 		</footer>
 	</main>
 </body>
